@@ -4,12 +4,11 @@ body {
   font-family: Verdana, Arial, Helvetica, SunSans-Regular, Sans-Serif;
   color: #bdb2ae;
   text-align: center;
-}  
+}
 
 #jazzyspoonlogo {
   padding-top: 100px;
   padding-left: 200px;
-
 }
 .spotifyalbums {
   display: flex;
@@ -20,8 +19,6 @@ body {
 h3 {
   color: white;
 }
-
-
 
 .card-title {
   font-size: 18px;
@@ -34,20 +31,18 @@ h3 {
   height: 500px;
   width: auto;
   background-color: rgba(0, 0, 0, 0.541);
-  border-width: 1px ;
+  border-width: 1px;
   border-color: azure;
 }
-
 
 .btn-success {
   color: rgb(255, 255, 255);
 }
 
-.border  {
+.border {
   display: flex;
   width: 100%;
   border-radius: 10px;
-
 }
 .BCreleases {
   display: flex;
@@ -78,7 +73,7 @@ h3 {
   margin: 10px;
 }
 
-.card-img-top  {
+.card-img-top {
   height: 160px;
 }
 
@@ -88,7 +83,7 @@ h3 {
   padding: 10px;
 }
 
-.px-4  {
+.px-4 {
   height: 300px;
 }
 
@@ -134,7 +129,6 @@ h1 {
 .containertitle {
   text-align: center;
   float: top;
-
 }
 
 .linkHead {
@@ -171,7 +165,7 @@ iframe {
   scroll-behavior: auto;
 }
 
-.presets  {
+.presets {
   margin-left: auto;
   margin-right: auto;
   margin-top: 10px;
