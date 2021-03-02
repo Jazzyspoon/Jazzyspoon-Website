@@ -1,0 +1,179 @@
+body {
+  background-color: #000;
+  font-size: 16px;
+  font-family: Verdana, Arial, Helvetica, SunSans-Regular, Sans-Serif;
+  color: #bdb2ae;
+  text-align: center;
+}  
+
+#jazzyspoonlogo {
+  padding-top: 100px;
+  padding-left: 200px;
+
+}
+.spotifyalbums {
+  display: flex;
+  padding-top: 80px;
+  padding-bottom: 700px;
+}
+
+h3 {
+  color: white;
+}
+
+
+
+.card-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: black;
+}
+
+.videocard {
+  margin: auto;
+  height: 500px;
+  width: auto;
+  background-color: rgba(0, 0, 0, 0.541);
+  border-width: 1px ;
+  border-color: azure;
+}
+
+
+.btn-success {
+  color: rgb(255, 255, 255);
+}
+
+.border  {
+  display: flex;
+  width: 100%;
+  border-radius: 10px;
+
+}
+.BCreleases {
+  display: flex;
+  text-align: center;
+  height: auto;
+  width: auto;
+  margin: 10px;
+}
+.youtube-player {
+  margin: 10px;
+}
+
+.imageLink {
+  height: 150px;
+  width: 150px;
+  margin: 0px;
+}
+
+.video-window {
+  width: 500px;
+  height: 580px;
+}
+
+.releases {
+  padding: 10px;
+  height: 190px;
+  width: 350px;
+  margin: 10px;
+}
+
+.card-img-top  {
+  height: 160px;
+}
+
+.column {
+  margin-top: 8px;
+  width: 100%;
+  padding: 10px;
+}
+
+.px-4  {
+  height: 300px;
+}
+
+.footer {
+  width: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-size: 11px;
+  text-transform: capitalize;
+  text-align: right;
+  color: #fff;
+}
+
+.title {
+  font-size: 24px;
+}
+
+.linkbox {
+  font-weight: bold;
+  width: auto;
+  height: auto;
+  float: left;
+  border-style: solid;
+  border-radius: 5px;
+  border-width: 1px;
+  margin: 3px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+}
+
+.linkbox:hover {
+  border-color: #333;
+}
+
+.containertitle {
+  text-align: center;
+  float: top;
+
+}
+
+.linkHead {
+  background: #fff;
+  width: auto;
+  display: block;
+  color: #999999;
+}
+
+.smallerLink {
+  width: 100px;
+  height: 50px;
+}
+
+#notice {
+  font-style: italic;
+  font-size: 11px;
+  width: 500px;
+}
+
+iframe {
+  margin-top: 20px;
+  float: left;
+  width: auto;
+}
+
+.clearfloat {
+  overflow: auto;
+  width: 100%;
+}
+
+.soundcloud {
+  width: 750px;
+  scroll-behavior: auto;
+}
+
+.presets  {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
