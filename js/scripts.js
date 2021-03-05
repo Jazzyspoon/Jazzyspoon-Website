@@ -95,8 +95,8 @@ $("#videoModal4").on("hidden.bs.modal", function (e) {
 });
 
 //activating the email link
-$(document).ready(function() {
-  $('#mailbutton').click(function(event) {
+$(document).ready(function () {
+  $("#mailbutton").click(function (event) {
     window.location = "mailto:jazzyspoon@gmail.com";
   });
 });
