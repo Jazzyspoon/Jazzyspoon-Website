@@ -21,8 +21,6 @@ window.scrollBy({
   behavior: "smooth",
 });
 
-
-
 //modal1
 $(function () {
   $(".video").click(function () {
