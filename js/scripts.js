@@ -93,3 +93,10 @@ $(function () {
 $("#videoModal4").on("hidden.bs.modal", function (e) {
   $("#videoModal4").find("iframe").attr("src", "");
 });
+
+//activating the email link
+$(document).ready(function() {
+  $('#mailbutton').click(function(event) {
+    window.location = "mailto:jazzyspoon@gmail.com";
+  });
+});
