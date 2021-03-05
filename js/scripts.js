@@ -21,10 +21,7 @@ window.scrollBy({
   behavior: "smooth",
 });
 
-// Scroll to a certain element
-document.querySelector(".hello").scrollIntoView({
-  behavior: "smooth",
-});
+
 
 //modal1
 $(function () {
