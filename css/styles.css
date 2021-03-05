@@ -13,7 +13,7 @@ body {
 .spotifyalbums {
   display: flex;
   padding-top: 80px;
-  padding-bottom: 700px;
+  padding-bottom: 300px;
 }
 
 h3 {
@@ -27,7 +27,7 @@ h3 {
 }
 
 .videocard {
-  margin: auto;
+  margin: 20px;
   height: 500px;
   width: auto;
   background-color: rgba(0, 0, 0, 0.541);
