@@ -20,9 +20,8 @@
     <link rel="stylesheet" type="text/css" href="./css/jquery.thumbs.css" />
   </head>
   <body>
-
     <!-- NavBar -->
-    
+
     <div class="container">
       <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand title text-white" href="#">Jazzyspoon</a>
@@ -115,18 +114,44 @@
       </nav>
     </div>
 
-
     <!-- Home page -->
-    
+
     <div class="container" id="home">
       <div class="row">
-        <div class="col-4">
+        <div class="col-10">
           <img
-            class="mx-auto d-block"
             src="./img/circle1.jpg"
             id="jazzyspoonlogo"
             alt="jazzyspoon-logo"
           />
+          <div id="player" class="border">
+            <div class="album">
+              <img src="./img/logo1.jpg" alt="musicplayerpicture" />
+            </div>
+            <div class="info">
+              <div class="progress-bar">
+                <div class="time--current"></div>
+                <div class="time--total"></div>
+                <div class="fill"></div>
+              </div>
+              <div class="currently-playing">
+                <h5 class="text-white">
+                  Today's Feature: <br />
+                  "Technical Failure" Podcast Mix
+                </h5>
+              </div>
+
+              <div class="controls">
+                <div class="play">
+                  <button class="fas fa-play btn btn-success">play</button>
+                </div>
+                <div class="pause">
+                  <button class="fas fa-pause btn btn-danger">pause</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <footer></footer>
           <br /><br />
         </div>
       </div>
@@ -201,13 +226,13 @@
     </div>
 
     <!--Soundcloud Playlists-->
-    
+
     <div class="container-fluid spotifyalbums border" id="SCplaylists">
       <h3>Soundcloud Playlist</h3>
       <div class="row-fluid">
         <iframe
           class="soundcloud"
-          height="450"
+          height="550"
           allow="autoplay"
           src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1191516880&color=%23050405&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
         ></iframe>
@@ -256,45 +281,58 @@
     </div>
 
     <!-- Special BandCamp releases -->
-    
+
     <div class="container-fluid spotifyalbums border" id="BCplaylists">
       <h3>Exclusive Bandcamp Albums</h3>
-      <div class="row-fluid">
+      <div class="grid row-fluid">
         <iframe
-          class="BCreleases"
-          src="https://bandcamp.com/EmbeddedPlayer/album=375194788/size=large/bgcol=333333/linkcol=ffffff/artwork=small/transparent=true/"
+          style="border: 0; width: 500px; height: 120px"
+          src="https://bandcamp.com/EmbeddedPlayer/album=375194788/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/"
         ></iframe>
+
         <iframe
-          class="BCreleases"
-          src="https://bandcamp.com/EmbeddedPlayer/album=1164562654/size=large/bgcol=333333/linkcol=ffffff/tracklist=false/artwork=small/transparent=true/"
+          style="border: 0; width: 500px; height: 120px"
+          src="https://bandcamp.com/EmbeddedPlayer/album=1164562654/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/"
         ></iframe>
+
         <iframe
-          class="BCreleases"
-          src="http://bandcamp.com/EmbeddedPlayer/album=3919451435/size=large/bgcol=333333/linkcol=0f91ff/tracklist=false/artwork=small/transparent=true/"
+          style="border: 0; width: 500px; height: 120px"
+          src="https://bandcamp.com/EmbeddedPlayer/album=3919451435/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/"
         ></iframe>
+
         <iframe
-          class="BCreleases"
+          style="border: 0; width: 500px; height: 120px"
           src="https://bandcamp.com/EmbeddedPlayer/album=583416785/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/"
         ></iframe>
+
         <iframe
-          class="BCreleases"
-          src="https://bandcamp.com/EmbeddedPlayer/album=2211586993/size=large/bgcol=333333/linkcol=ffffff/tracklist=false/artwork=small/transparent=true/"
+          style="border: 0; width: 500px; height: 120px"
+          src="https://bandcamp.com/EmbeddedPlayer/album=2211586993/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/"
         ></iframe>
+
         <iframe
-          class="BCreleases"
-          src="https://bandcamp.com/EmbeddedPlayer/album=2800845654/size=large/bgcol=333333/linkcol=ffffff/tracklist=false/artwork=small/transparent=true/"
+          style="border: 0; width: 500px; height: 120px"
+          src="https://bandcamp.com/EmbeddedPlayer/album=2800845654/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/"
         ></iframe>
+
         <iframe
-          class="BCreleases"
-          src="https://bandcamp.com/EmbeddedPlayer/album=3636608481/size=large/bgcol=333333/linkcol=ffffff/tracklist=false/artwork=small/transparent=true/"
+          style="border: 0; width: 500px; height: 120px"
+          src="https://bandcamp.com/EmbeddedPlayer/album=3636608481/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/"
         ></iframe>
+
         <iframe
-          class="BCreleases"
-          src="https://bandcamp.com/EmbeddedPlayer/album=132793853/size=large/bgcol=333333/linkcol=ffffff/tracklist=false/artwork=small/transparent=true/"
+          style="border: 0; width: 500px; height: 120px"
+          src="https://bandcamp.com/EmbeddedPlayer/album=132793853/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/"
         ></iframe>
+        <a
+          href="https://jazzyspoon.bandcamp.com/"
+          target="_blank"
+          class="linkbox"
+          >There's more of these on bandcamp!</a
+        >
       </div>
     </div>
-     <!-- End of Bandcamp page -->
+    <!-- End of Bandcamp page -->
 
     <!-- modals for video page and page -->
 
@@ -302,7 +340,6 @@
       <h3>Latest Videos</h3>
       <div class="container">
         <div class="row">
-
           <!-- modal/video 1 -->
           <div
             class="modal fade"
@@ -507,6 +544,7 @@
               <a
                 href="http://jazzyspoon.com/VST%20PRESETS%20AND%20BANKS/ARCHITEXTUREMIX.rar"
                 class="btn btn-primary"
+                target="_blank"
                 >Download</a
               >
             </div>
@@ -522,6 +560,7 @@
               <a
                 href="http://jazzyspoon.com/VST%20PRESETS%20AND%20BANKS/Jazzyspoon%20CHOPSOKKIT%20v2.zip"
                 class="btn btn-primary"
+                target="_blank"
                 >Download</a
               >
             </div>
@@ -537,6 +576,7 @@
               <a
                 href="http://jazzyspoon.com/VST%20PRESETS%20AND%20BANKS/Jazzyspoon%20SONGFREEZER.rar"
                 class="btn btn-primary"
+                target="_blank"
                 >Download</a
               >
             </div>
@@ -552,6 +592,7 @@
               <a
                 href="http://jazzyspoon.com/VST%20PRESETS%20AND%20BANKS/MADNESS.rar"
                 class="btn btn-primary"
+                target="_blank"
                 >Download</a
               >
             </div>
@@ -567,6 +608,7 @@
               <a
                 href="http://jazzyspoon.com/VST%20PRESETS%20AND%20BANKS/NEWSPOON.rar"
                 class="btn btn-primary"
+                target="_blank"
                 >Download</a
               >
             </div>
@@ -583,6 +625,7 @@
               <a
                 href="http://jazzyspoon.com/VST%20PRESETS%20AND%20BANKS/GHOSTER.rar"
                 class="btn btn-primary"
+                target="_blank"
                 >Download</a
               >
             </div>
@@ -598,6 +641,7 @@
               <a
                 href="http://jazzyspoon.com/VST%20PRESETS%20AND%20BANKS/jazzyspoon%20GRAINDRAIN.rar"
                 class="btn btn-primary"
+                target="_blank"
                 >Download</a
               >
             </div>
@@ -613,6 +657,7 @@
               <a
                 href="http://jazzyspoon.com/VST%20PRESETS%20AND%20BANKS/Jazzyspoon%20DRUMTANGLER.rar"
                 class="btn btn-primary"
+                target="_blank"
                 >Download</a
               >
             </div>
@@ -628,6 +673,7 @@
               <a
                 href="http://jazzyspoon.com/VST%20PRESETS%20AND%20BANKS/JAZZYSPOON%20SPIREX.rar"
                 class="btn btn-primary"
+                target="_blank"
                 >Download</a
               >
             </div>
@@ -643,6 +689,7 @@
               <a
                 href="http://jazzyspoon.com/VST%20PRESETS%20AND%20BANKS/TAPESPOON.rar"
                 class="btn btn-primary"
+                target="_blank"
                 >Download</a
               >
             </div>
@@ -658,6 +705,7 @@
               <a
                 href="http://jazzyspoon.com/VST%20PRESETS%20AND%20BANKS/BEATWEIRDER%20by%20Jazzyspoon.rar"
                 class="btn btn-primary"
+                target="_blank"
                 >Download</a
               >
             </div>
@@ -699,6 +747,7 @@
               <a
                 href="http://jazzyspoon.com/VST%20PRESETS%20AND%20BANKS/JAZZYSPOON%20DEADON%20KIT.rar"
                 class="btn btn-primary"
+                target="_blank"
                 >Download</a
               >
             </div>
@@ -716,6 +765,7 @@
               <a
                 href="http://jazzyspoon.com/VST%20PRESETS%20AND%20BANKS/JAZZYSPOON%20PRESSURE%20KIT.rar"
                 class="btn btn-primary"
+                target="_blank"
                 >Download</a
               >
             </div>
@@ -733,6 +783,7 @@
               <a
                 href="http://jazzyspoon.com/VST%20PRESETS%20AND%20BANKS/JAZZYSPOON%203AMBIENT%20KIT.rar"
                 class="btn btn-primary"
+                target="_blank"
                 >Download</a
               >
             </div>
@@ -749,6 +800,7 @@
               <a
                 href="http://jazzyspoon.com/VST%20PRESETS%20AND%20BANKS/JAZZYSPOONS%20BITLESSER%20KIT.rar"
                 class="btn btn-primary"
+                target="_blank"
                 >Download</a
               >
             </div>
@@ -765,6 +817,7 @@
               <a
                 href="http://jazzyspoon.com/VST%20PRESETS%20AND%20BANKS/JAZZYSPOON%20GUITARISH%20KIT.rar"
                 class="btn btn-primary"
+                target="_blank"
                 >Download</a
               >
             </div>
@@ -781,6 +834,7 @@
               <a
                 href="http://jazzyspoon.com/VST%20PRESETS%20AND%20BANKS/IG88%20GRANULAR%20TWISTINGS%20KIT.rar"
                 class="btn btn-primary"
+                target="_blank"
                 >Download</a
               >
             </div>
@@ -796,6 +850,7 @@
               <a
                 href="http://jazzyspoon.com/VST%20PRESETS%20AND%20BANKS/JAZZYSPOON%20ANGRY%20IDMF%20SAMPLES.rar"
                 class="btn btn-primary"
+                target="_blank"
                 >Download</a
               >
             </div>
@@ -823,6 +878,7 @@
               <a
                 href="http://jazzyspoon.com/VST%20PRESETS%20AND%20BANKS/JAZZYSPOON%20ABSYNTH%204%20BANK%201.rar"
                 class="btn btn-primary"
+                target="_blank"
                 >Download</a
               >
             </div>
@@ -841,6 +897,7 @@
               <a
                 href=" http://jazzyspoon.com/VST%20PRESETS%20AND%20BANKS/Jazzyspoon%20Massive%20presets%201.rar"
                 class="btn btn-primary"
+                target="_blank"
                 >Download</a
               >
             </div>
@@ -859,6 +916,7 @@
               <a
                 href="http://jazzyspoon.com/VST%20PRESETS%20AND%20BANKS/jazzyspoon%20guitar%20rig%20bank.zip"
                 class="btn btn-primary"
+                target="_blank"
                 >Download</a
               >
             </div>
@@ -936,7 +994,6 @@
       <h3>Forums Jazzyspoon regularly haunts</h3>
       <div class="container">
         <div class="row">
-
           <!-- site 1 -->
           <div class="card presets" style="width: 14rem">
             <img
@@ -1069,7 +1126,8 @@
 
     <script src="./js/jquery-3.5.1.min.js"></script>
     <script src="./js/jquery.thumbs.js"></script>
-    <script src="https://cdn.rawgit.com/JacobLett/bootstrap4-latest/master/bootstrap-4-latest.min.js"></script>
+    <script src="./js/bootstrap.bundle.js"></script>
+    <!-- <script src="https://cdn.rawgit.com/JacobLett/bootstrap4-latest/master/bootstrap-4-latest.min.js"></script> -->
     <script src="./js/promise-polyfill.js"></script>
     <script src="./js/fetch.polyfill.js"></script>
     <script src="./js/scripts.js"></script>

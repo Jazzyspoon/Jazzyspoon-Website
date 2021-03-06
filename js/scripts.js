@@ -95,3 +95,24 @@ $(document).ready(function () {
     window.location = "mailto:jazzyspoon@gmail.com";
   });
 });
+//music player
+
+//music player settings
+let audio = new Audio('http://www.jazzyspoon.com/playerfeature/technical%20failure%20podcast%20mix%20final.mp3');
+
+//hide pause button until clicked
+$('.pause').hide(); 
+
+//play button
+$('.play').click(function(){
+  audio.play();
+  $('.play').hide();
+  $('.pause').show();
+});
+
+//pause button
+$('.pause').click(function(){
+  audio.pause();
+  $('.play').show();
+  $('.pause').hide();
+});
