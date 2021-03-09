@@ -3,11 +3,6 @@ window.onbeforeunload = () => {
   window.scrollTo(0, 0);
 };
 
-$(function () {
-  //replaces images with the pretty thumbnails
-  $(".imageLink").thumbs();
-});
-
 window.scroll({
   top: 0,
   left: 0,
@@ -16,7 +11,7 @@ window.scroll({
 
 // Scroll certain amounts from current position
 window.scrollBy({
-  top: 0, // could be negative value
+  top: 0,
   left: 0,
   behavior: "smooth",
 });
@@ -94,25 +89,4 @@ $(document).ready(function () {
   $("#mailbutton").click(function (event) {
     window.location = "mailto:jazzyspoon@gmail.com";
   });
-});
-//music player
-
-//music player settings
-let audio = new Audio('http://www.jazzyspoon.com/playerfeature/technical%20failure%20podcast%20mix%20final.mp3');
-
-//hide pause button until clicked
-$('.pause').hide(); 
-
-//play button
-$('.play').click(function(){
-  audio.play();
-  $('.play').hide();
-  $('.pause').show();
-});
-
-//pause button
-$('.pause').click(function(){
-  audio.pause();
-  $('.play').show();
-  $('.pause').hide();
 });

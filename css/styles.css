@@ -6,20 +6,47 @@ body {
   text-align: center;
 }
 
-#jazzyspoonlogo {
-  padding-top: 100px;
-  margin-bottom: 30px;
-  float: center;
-  position: relative;
+.footlink {
+  font-size: 20px;
 }
+.navbar-toggler {
+  background-color: rgb(131, 128, 128);
+}
+
+.navbar-brand {
+  font-size: 40px;
+}
+
+.nav-link {
+  font-size: 24px;
+}
+
+.dropdown-item {
+  font-size: 24px;
+}
+
+.jazzyspoonlogo {
+  padding-top: 60px;
+  float: center;
+}
+
+.player {
+  position: relative;
+  float: center;
+  margin-top: 100px;
+  margin-left: 60px;
+  width: 300px;
+  border-radius: 10px;
+}
+
 .spotifyalbums {
-  display: flex;
-  padding-top: 80px;
+  padding-top: 100px;
   padding-bottom: 300px;
 }
 
 h3 {
   color: white;
+  text-align: center;
 }
 
 .card-title {
@@ -44,9 +71,9 @@ h3 {
 }
 
 .videocard {
-  margin: 20px;
-  height: 500px;
-  width: auto;
+  margin: 6px;
+  height: 450px;
+  max-width: 350px;
   background-color: rgba(0, 0, 0, 0.541);
   border-width: 1px;
   border-color: azure;
@@ -54,12 +81,6 @@ h3 {
 
 .btn-success {
   color: rgb(255, 255, 255);
-}
-
-.border {
-  display: flex;
-  width: 100%;
-  border-radius: 10px;
 }
 
 .youtube-player {
@@ -78,14 +99,13 @@ h3 {
 }
 
 .releases {
-  padding: 10px;
   height: 190px;
-  width: 400px;
-  margin: 40px;
+
+  margin: 20px;
 }
 
 .card-img-top {
-  height: 160px;
+  height: 140px;
 }
 
 .column {
@@ -160,9 +180,8 @@ h1 {
   width: 500px;
 }
 
-iframe {
+.iframe {
   margin-top: 20px;
-
   width: auto;
 }
 
@@ -173,7 +192,7 @@ iframe {
 
 .soundcloud {
   display: flex;
-  width: 650px;
+  width: 100%;
   scroll-behavior: auto;
 }
 
@@ -184,17 +203,6 @@ iframe {
   margin-bottom: 10px;
 }
 
-#player {
-  position: relative;
-  margin-top: 200px;
-  float: right;
-  width: 300px;
-  height: 300px;
-  overflow: hidden;
-  border-radius: 5px;
-  box-shadow: 5px 5px 15px rgba(#79d88f, 0.4);
-}
-
 .album {
   width: 100%;
   height: 100%;
@@ -202,63 +210,15 @@ iframe {
   position: absolute;
 }
 
-.clicked {
-  color: #49654d;
-  transform: scale(1.2);
-  transition: all 0.4s ease;
+.videoimage {
+  height: 150px;
+  width: auto;
 }
 
-.info {
-  height: auto;
+#videos {
+  text-align: center;
+}
+
+.card  {
   width: 100%;
-  position: absolute;
-  bottom: 0;
-  background: black;
-}
-
-.up {
-  transform: translateY(0px);
-}
-
-.progress-bar {
-  height: 5px;
-  width: 73%;
-  margin: 6% auto;
-  background: #c0cfb2;
-  border-radius: 10px;
-  font-family: inherit;
-}
-
-.fill {
-  background-color: #8ba989;
-  width: 35%;
-  height: 0.3rem;
-  border-radius: 2px;
-}
-
-.song-name {
-  font-size: 0.8em;
-  letter-spacing: 3px;
-  color: #364f3c;
-}
-
-.controls {
-  display: flex;
-  padding: 0px;
-  align-items: center;
-  font-size: 0.8em;
-  justify-content: center;
-  color: #0fdb00;
-}
-.play,
-.pause {
-  color: #11ff00;
-}
-
-.play,
-.pause {
-  transition: all 0.5s ease;
-}
-.play :hover {
-  color: lighten(#4dff76, 15%);
 }

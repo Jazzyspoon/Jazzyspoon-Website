@@ -8,23 +8,23 @@
       href="./img/favicon-32x32.png"
       sizes="32x32"
     />
-
+    <meta name="viewport" content="width=device-width" />
     <link
       rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
     <link rel="stylesheet" type="text/css" href="./css/reset.min.css" />
     <link rel="stylesheet" type="text/css" href="./css/styles.css" />
-    <link rel="stylesheet" type="text/css" href="./css/jquery.thumbs.css" />
   </head>
+
   <body>
     <!-- NavBar -->
 
     <div class="container">
       <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand title text-white" href="#">Jazzyspoon</a>
+        <a class="nav-link linkbox text-white" href="#">Home Page</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -39,9 +39,6 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav">
             <!-- href links refer to div ids below -->
-            <li class="nav-item nav-link">
-              <a class="nav-link linkbox text-white" href="#">Home Page</a>
-            </li>
             <li class="nav-item dropdown nav-link">
               <a
                 class="nav-link dropdown-toggle linkbox text-white"
@@ -118,38 +115,19 @@
 
     <div class="container" id="home">
       <div class="row">
-        <div class="col-10">
-          <img
-            src="./img/circle1.jpg"
-            id="jazzyspoonlogo"
-            alt="jazzyspoon-logo"
-          />
-          <div id="player" class="border">
-            <div class="album">
-              <img src="./img/logo1.jpg" alt="musicplayerpicture" />
-            </div>
-            <div class="info">
-              <div class="progress-bar">
-                <div class="time--current"></div>
-                <div class="time--total"></div>
-                <div class="fill"></div>
-              </div>
-              <div class="currently-playing">
-                <h5 class="text-white">
-                  Today's Feature: <br />
-                  "Technical Failure" Podcast Mix
-                </h5>
-              </div>
-
-              <div class="controls">
-                <div class="play">
-                  <button class="fas fa-play btn btn-success">play</button>
-                </div>
-                <div class="pause">
-                  <button class="fas fa-pause btn btn-danger">pause</button>
-                </div>
-              </div>
-            </div>
+        <div class="jazzyspoonlogo">
+          <img src="./img/circle1.jpg" alt="jazzyspoon-logo" />
+        </div>
+        <div class="jazzyspoonlogo">
+          <div class="player">
+            <h6 class="linkbox text-white">
+              Latest Jazzyspoon Spotify release:
+            </h6>
+            <iframe
+              src="https://open.spotify.com/embed/album/2qqEnKcfOHmyh6ebFQVwyW"
+              height="400"
+              allow="encrypted-media"
+            ></iframe>
           </div>
           <footer></footer>
           <br /><br />
@@ -159,7 +137,7 @@
 
     <!-- Spotify releases page -->
 
-    <div class="container-fluid spotifyalbums border" id="spotifyalbums">
+    <div class="container-fluid spotifyalbums" id="spotifyalbums">
       <h3>Spotify Albums</h3>
       <div class="row-fluid">
         <iframe
@@ -227,7 +205,7 @@
 
     <!--Soundcloud Playlists-->
 
-    <div class="container-fluid spotifyalbums border" id="SCplaylists">
+    <div class="container-fluid spotifyalbums" id="SCplaylists">
       <h3>Soundcloud Playlist</h3>
       <div class="row-fluid">
         <iframe
@@ -282,7 +260,7 @@
 
     <!-- Special BandCamp releases -->
 
-    <div class="container-fluid spotifyalbums border" id="BCplaylists">
+    <div class="container-fluid spotifyalbums" id="BCplaylists">
       <h3>Exclusive Bandcamp Albums</h3>
       <div class="grid row-fluid">
         <iframe
@@ -324,21 +302,15 @@
           style="border: 0; width: 500px; height: 120px"
           src="https://bandcamp.com/EmbeddedPlayer/album=132793853/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/"
         ></iframe>
-        <a
-          href="https://jazzyspoon.bandcamp.com/"
-          target="_blank"
-          class="linkbox"
-          >There's more of these on bandcamp!</a
-        >
       </div>
     </div>
     <!-- End of Bandcamp page -->
 
     <!-- modals for video page and page -->
 
-    <div class="container-fluid border spotifyalbums" id="videos">
+    <div class="container-fluid spotifyalbums" id="videos">
       <h3>Latest Videos</h3>
-      <div class="container">
+      <div class="container-fluid">
         <div class="row">
           <!-- modal/video 1 -->
           <div
@@ -362,15 +334,15 @@
               </div>
             </div>
           </div>
-          <div class="card videocard" style="width: 18rem">
+          <div class="card videocard">
             <img
-              class="card-img-top"
+              class="videoimage"
               src="./img/vidthumbs/perfect.JPG"
               alt="Perfect 2020"
             />
             <div class="card-body">
               <a
-                class="btn btn-success btn-lg video"
+                class="btn btn-info btn-lg video"
                 data-video="https://www.youtube.com/embed/4dWW_uWD87M"
                 data-toggle="modal"
                 data-target="#videoModal"
@@ -386,6 +358,7 @@
           </div>
 
           <!-- modal/video 2 -->
+
           <div
             class="modal fade"
             id="videoModal2"
@@ -407,15 +380,15 @@
               </div>
             </div>
           </div>
-          <div class="card videocard" style="width: 18rem">
+          <div class="card videocard">
             <img
-              class="card-img-top"
+              class="videoimage"
               src="./img/vidthumbs/watermark.JPG"
               alt="Watermark"
             />
             <div class="card-body">
               <a
-                class="btn btn-success btn-lg video"
+                class="btn btn-info btn-lg video"
                 data-video="https://www.youtube.com/embed/oW1KC6TZLjs"
                 data-toggle="modal"
                 data-target="#videoModal2"
@@ -430,6 +403,7 @@
             </div>
           </div>
           <!-- modal/video 3 -->
+
           <div
             class="modal fade"
             id="videoModal3"
@@ -451,15 +425,15 @@
               </div>
             </div>
           </div>
-          <div class="card videocard" style="width: 18rem">
+          <div class="card videocard">
             <img
-              class="card-img-top"
+              class="videoimage"
               src="./img/vidthumbs/somplace.JPG"
               alt="Out There, Someplace"
             />
             <div class="card-body">
               <a
-                class="btn btn-success btn-lg video"
+                class="btn btn-info btn-lg video"
                 data-video="https://www.youtube.com/embed/Z5Wxyv5r4nA"
                 data-toggle="modal"
                 data-target="#videoModal3"
@@ -474,7 +448,8 @@
             </div>
           </div>
 
-          <!-- modal/video 3 -->
+          <!-- modal/video 4 -->
+
           <div
             class="modal fade"
             id="videoModal4"
@@ -496,15 +471,15 @@
               </div>
             </div>
           </div>
-          <div class="card videocard" style="width: 18rem">
+          <div class="card videocard">
             <img
-              class="card-img-top"
+              class="videoimage"
               src="./img/vidthumbs/reddress.JPG"
               alt="The Red Dress"
             />
             <div class="card-body">
               <a
-                class="btn btn-success btn-lg video"
+                class="btn btn-info btn-lg video"
                 data-video="https://www.youtube.com/embed/7PjrJzyKx6Q"
                 data-toggle="modal"
                 data-target="#videoModal4"
@@ -529,8 +504,8 @@
 
     <!-- reaktor ensembles -->
 
-    <div class="container-fluid spotifyalbums border" id="reaktor">
-      <h4>REAKTOR ENSEMBLES (created in v5.1.4)</h4>
+    <div class="container-fluid spotifyalbums" id="reaktor">
+      <h3>REAKTOR ENSEMBLES (created in v5.1.4)</h3>
       <div class="container">
         <div class="grid row">
           <div class="card presets" style="width: 12rem">
@@ -732,8 +707,8 @@
 
     <!-- battery kits -->
 
-    <div class="container-fluid spotifyalbums border" id="battery">
-      <h4>BATTERY KITS (created in v4.1)</h4>
+    <div class="container-fluid spotifyalbums" id="battery">
+      <h3>BATTERY KITS (created in v4.1)</h3>
       <div class="container">
         <div class="grid row">
           <div class="card presets" style="width: 12rem">
@@ -861,7 +836,7 @@
 
     <!-- misc kits/presets -->
 
-    <div class="container-fluid border spotifyalbums" id="misc">
+    <div class="container-fluid spotifyalbums" id="misc">
       <h3>Misc Presets</h3>
       <div class="container">
         <div class="grid row">
@@ -931,31 +906,27 @@
       <div class="col-1"></div>
       <br />
     </div>
-    <div class="container-fluid border spotifyalbums">
+    <div class="container-fluid spotifyalbums">
       <div>
         <h1 style="text-align: center">
           <span style="font-size: x-large"><u>A</u><u>bout Jazzyspoon</u></span>
         </h1>
-
         <h3 style="text-align: center">
           <span style="font-weight: normal"
             ><span style="font-size: large">Hello Friends!</span></span
           >
         </h3>
         <p style="text-align: center"><br /></p>
-        <p style="font-size: 14px">
+        <h5>
           Jazzyspoon (aka Jason Pottorff) is an electronic
           musician/producer/sound designer/remixer currently based out of
           Denver, Colorado USA. Preferring not to be confined to one subgenre or
           musical style makes it difficult to pinpoint a category for his music,
           you’ll likely find his biggest fanbase is comprised mostly of hardcore
-          audiophiles and other electronic musicians. Some of the forums you can
-          find him at:<br />
-        </p>
-
+          audiophiles and other electronic musicians. <br />
+        </h5>
         <p style="text-align: center"><br /></p>
-
-        <p style="font-size: 14px">
+        <p style="font-size: 20px">
           He is best known for continually experimenting in his studio to find
           the perfect hybrid of IDM, downtempo, glitch, trip hop, rock,
           shoegaze, industrial, ambient, electro, dubstep, breaks, jazz, club,
@@ -964,8 +935,7 @@
           that perfect hybrid so that he may continue creatively growing and
           learning new techniques.<br /><br />
         </p>
-
-        <p style="font-size: 14px">
+        <p style="font-size: 20px">
           Generally releasing only one Jazzyspoon CD every year or two for both
           personal and quality purposes, he can regularly be found sharing his
           current musical explorations and knowledge on forums across the net.
@@ -990,7 +960,7 @@
     <!-- End About jazzyspoon -->
 
     <!--forums Jazzyspoon Haunts-->
-    <div class="container-fluid border spotifyalbums" id="forums">
+    <div class="container-fluid spotifyalbums" id="forums">
       <h3>Forums Jazzyspoon regularly haunts</h3>
       <div class="container">
         <div class="row">
@@ -1003,17 +973,17 @@
             />
             <div class="card-body">
               <h5 class="card-title">IDM FORUMS</h5>
-              <p>
-                A great place for edgier IDM and intelligent electronic music.
-                Jazzyspoon is both an artist of thier netlabel and regular
-                shit-poster.
-              </p>
               <a
                 href="http://idmforums.com/"
                 target="_blank"
                 class="btn btn-primary"
                 >visit</a
               >
+              <p>
+                A great place for edgier IDM and intelligent electronic music.
+                Jazzyspoon is both an artist of the IDMf netlabel and regular
+                shit-poster.
+              </p>
             </div>
           </div>
 
@@ -1026,16 +996,16 @@
             />
             <div class="card-body">
               <h5 class="card-title">THE IDM PRODUCTION BUREAU (IDM GURU)</h5>
-              <p>
-                A new spot for artists of intelligent electronic music. Please
-                come by for a visit.
-              </p>
               <a
                 href="https://www.idm.guru/"
                 target="_blank"
                 class="btn btn-primary"
                 >visit</a
               >
+              <p>
+                A new spot for artists of intelligent electronic music. Please
+                come by for a visit.
+              </p>
             </div>
           </div>
 
@@ -1048,16 +1018,16 @@
             />
             <div class="card-body">
               <h5 class="card-title">KVR Forums</h5>
-              <p>
-                A home to many musicians worldwide that share ideas, creations,
-                music, recording techniques, and music software.
-              </p>
               <a
                 href="https://www.kvraudio.com/forum/"
                 target="_blank"
                 class="btn btn-primary"
                 >visit</a
               >
+              <p>
+                A home to many musicians worldwide that share ideas, creations,
+                music, recording techniques, and music software.
+              </p>
             </div>
           </div>
         </div>
@@ -1068,55 +1038,55 @@
     <footer class="footer navbar fixed-bottom navbar-dark solid bg-dark">
       <h6>
         <a
-          class="linkbox text-white"
+          class="linkbox footlink text-white"
           href="https://jazzyspoon.bandcamp.com/"
           target="_blank"
           >Bandcamp</a
         >
         <a
-          class="linkbox text-white"
+          class="linkbox footlink text-white"
           href="https://music.apple.com/mt/artist/jazzyspoon/386254134"
           target="_blank"
           >Itunes/Apple Music</a
         >
         <a
-          class="linkbox text-white"
+          class="linkbox footlink text-white"
           href="https://open.spotify.com/artist/5SUPelrFERP9jhGgvNd9e3?si=J4iOQi-1SRWwosDgKzQK7Q"
           target="_blank"
           >Spotify</a
         >
         <a
-          class="linkbox text-white"
+          class="linkbox footlink text-white"
           href="https://music.amazon.com/artists/B003YKB6MY/jazzyspoon?marketplaceId=ATVPDKIKX0DER&musicTerritory=US"
           target="_blank"
           >Amazon Music</a
         >
         <a
-          class="linkbox text-white"
+          class="linkbox footlink text-white"
           href="https://twitter.com/#!/Jazzyspoon"
           target="_blank"
           >Twitter</a
         >
         <a
-          class="linkbox text-white"
+          class="linkbox footlink text-white"
           href="https://www.facebook.com/Jazzyspoon"
           target="_blank"
           >Facebook</a
         >
         <a
-          class="linkbox text-white"
+          class="linkbox footlink text-white"
           href="https://www.instagram.com/jazzyspoon/"
           target="_blank"
           >Instagram</a
         >
         <a
-          class="linkbox text-white"
+          class="linkbox footlink text-white"
           href="http://jazzyspoon.tumblr.com"
           target="_blank"
           >Tumbler</a
         >
         <a
-          class="linkbox text-white"
+          class="linkbox footlink text-white"
           href="https://hearthis.at/jazzyspoon"
           target="_blank"
           >Hearthis</a
@@ -1124,10 +1094,22 @@
       </h6>
     </footer>
 
-    <script src="./js/jquery-3.5.1.min.js"></script>
-    <script src="./js/jquery.thumbs.js"></script>
-    <script src="./js/bootstrap.bundle.js"></script>
-    <!-- <script src="https://cdn.rawgit.com/JacobLett/bootstrap4-latest/master/bootstrap-4-latest.min.js"></script> -->
+    <!-- <script src="./js/jquery.thumbs.js"></script> -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
     <script src="./js/promise-polyfill.js"></script>
     <script src="./js/fetch.polyfill.js"></script>
     <script src="./js/scripts.js"></script>
