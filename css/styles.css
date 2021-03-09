@@ -26,7 +26,7 @@ body {
 }
 
 .jazzyspoonlogo {
-  padding-top: 60px;
+  padding-top: 100px;
   float: center;
 }
 
@@ -73,7 +73,7 @@ h3 {
 .videocard {
   margin: 6px;
   height: 450px;
-  max-width: 350px;
+  max-width: 300px;
   background-color: rgba(0, 0, 0, 0.541);
   border-width: 1px;
   border-color: azure;
