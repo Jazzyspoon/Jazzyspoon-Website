@@ -27,13 +27,11 @@ body {
 
 .jazzyspoonlogo {
   padding-top: 100px;
-  float: center;
-}
+  }
 
 .player {
   position: relative;
-  float: center;
-  margin-top: 90px;
+  margin-top: 80px;
   margin-left: 60px;
   width: 300px;
   border-radius: 10px;
