@@ -90,3 +90,7 @@ $(document).ready(function () {
     window.location = "mailto:jazzyspoon@gmail.com";
   });
 });
+
+$(".navbar-nav>li").on("click", function () {
+  $(".navbar-collapse").collapse("hide");
+});
