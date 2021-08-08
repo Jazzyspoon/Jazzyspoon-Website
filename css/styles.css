@@ -6,7 +6,7 @@ body {
   text-align: center;
 }
 .nav-item {
-  margin-left: 15px;
+  margin-left: 25px;
 }
 
 .navbar-toggler {
@@ -14,23 +14,8 @@ body {
   color: white;
 }
 
-/* .navbar-nav {
-  font-size: 24px;
-  padding: 4px;
-}
-
-.nav-link {
-  font-size: 24px;
-  padding: 4px;
-} */
-
-/* .dropdown-item {
-  font-size: 24px;
-  padding: 2px;
-} */
-
 .jazzyspoonlogo {
-  padding-top: 50px;
+  padding-top: 10px;
 }
 
 .player {
