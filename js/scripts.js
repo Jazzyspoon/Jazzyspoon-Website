@@ -95,6 +95,6 @@ $(".navbar-nav>li").on("click", function () {
   $(".navbar-collapse").collapse("hide");
 });
 
-$(".img-fluid").addClass("wow fadeIn z-depth-1-half");
+// $(".img-fluid").addClass("wow fadeIn z-depth-1-half");
 
-new WOW().init();
+// new WOW().init();

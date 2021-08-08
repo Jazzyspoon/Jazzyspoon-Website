@@ -1,222 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Jazzyspoon</title>
-    <link
-      rel="icon"
-      type="image/png"
-      href="./img/favicon-32x32.png"
-      sizes="32x32"
-    />
-    <meta name="viewport" content="width=device-width" />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" type="text/css" href="./css/reset.min.css" />
-    <link rel="stylesheet" type="text/css" href="./css/styles.css" />
-  </head>
 
-  <body>
+<head>
+  <title>Jazzyspoon</title>
+  <link rel="icon" type="image/png" href="./img/favicon-32x32.png" sizes="32x32" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous" />
+  <!-- MDB -->
+  <link rel="stylesheet" href="css/mdb.min.css" />
+  <link rel="stylesheet" type="text/css" href="./css/reset.min.css" />
+  <link rel="stylesheet" type="text/css" href="./css/styles.css" />
+   
+</head>
+
+<body>
+  <div class="container">
     <!-- NavBar -->
-
-    <div class="container">
-      <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-        <a class="nav-link linkbox text-white" href="#">Home Page</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand linkbox text-white" href="#home">Home</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <div class="collapse navbar-collapse bg-dark" id="navbarNavDropdown">
           <ul class="navbar-nav">
-            <!-- href links refer to div ids below -->
-            <li class="nav-item dropdown nav-link">
-              <a
-                class="nav-link dropdown-toggle linkbox text-white"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                Music
-              </a>
-              <div
-                class="dropdown-menu bg-dark"
-                aria-labelledby="navbarDropdown"
-              >
-                <a
-                  class="dropdown-item linkbox text-white"
-                  href="#spotifyalbums"
-                  >Spotify Albums</a
-                >
-                <a class="dropdown-item linkbox text-white" href="#SCplaylists"
-                  >Soundcloud Playlist</a
-                >
-                <a class="dropdown-item linkbox text-white" href="#BCplaylists"
-                  >Exclusive Bandcamp albums</a
-                >
-                <a class="nav-link linkbox text-white" href="#videos"
-                  >Latest Videos</a
-                >
-              </div>
-            </li>
 
-            <li class="nav-item dropdown nav-link">
-              <a
-                class="nav-link dropdown-toggle linkbox text-white"
-                href="#"
-                id="navbarDropdown2"
-                role="button"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                Free VST Presets
+            <!-- music dropdown -->
+            <li class="nav-item dropdown text-white">
+              <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownMenuLink" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+               Exclusive Music
               </a>
-              <div
-                class="dropdown-menu bg-dark"
-                aria-labelledby="navbarDropdown"
-              >
-                <a class="dropdown-item linkbox text-white" href="#reaktor"
-                  >Reaktor Ensembles</a
-                >
-                <a class="dropdown-item linkbox text-white" href="#battery"
-                  >Battery Kits</a
-                >
-                <a class="dropdown-item linkbox text-white" href="#misc"
-                  >Misc</a
-                >
-              </div>
-            </li>
-            <li class="nav-item nav-link">
-              <a class="nav-link linkbox text-white" href="#about"
-                >About Jazzyspoon</a
-              >
-            </li>
+              <ul class="dropdown-menu bg-dark " aria-labelledby="navbarDropdownMenuLink">
+                <li>
+                  <a class="dropdown-item linkbox text-white" href="#spotifyalbums">
+                    Spotify Albums
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item linkbox text-white" href="#SCplaylists">
+                    Soundcloud Playlist
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item linkbox text-white" href="#BCplaylists">
+                    Exclusive Bandcamp albums
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item linkbox text-white" href="#videos">
+                    Latest Videos
+                  </a>
+                </li>
+              </ul>
+
+          </ul>
+          </li>
+
+
+          <!-- vst navbar dropdown -->
+
+          <li class="nav-item dropdown  text-white">
+            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownMenuLink" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Free VST Presets</a>
+            <ul class="dropdown-menu bg-dark " aria-labelledby="navbarDropdownMenuLink">
+
+              <li>
+                <a class="dropdown-item linkbox text-white" href="#reaktor">Reaktor Ensembles</a>
+              </li>
+              <li>
+                <a class="dropdown-item linkbox text-white" href="#battery">Battery Kits</a>
+              </li>
+              <li>
+                <a class="dropdown-item linkbox text-white" href="#misc">Misc</a>
+              </li>
+            </ul>
+            </ul>
+          </li>
+          <li class="nav-item dropdown  text-white">
+            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownMenuLink" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              About Jazzyspoon</a>
+            <ul class="dropdown-menu bg-dark " aria-labelledby="navbarDropdownMenuLink">
+
+              <li>
+                <a class="dropdown-item linkbox text-white" href="#about">About</a>
+              </li>
+              <li>
+                <a class="dropdown-item linkbox text-white" href="#forums">Music Forums</a>
+              </li>
+              
+            </ul>
+            </ul>
+          </li>
+       
+         
+
+
           </ul>
         </div>
-      </nav>
-    </div>
+      </div>
+    </nav>
+
 
     <!-- Home page -->
 
     <div class="container" id="home">
       <div class="row">
         <div class="jazzyspoonlogo mx-auto">
-          <img src="./img/circle1.jpg" alt="jazzyspoon-logo" />
+          <img src="./img/circle1.jpg" class="img-fluid" alt="jazzyspoon-logo" />
         </div>
       </div>
-      <h3>Follow Jazzyspoon On:</h3>
-      <div>
-        <div class="row mx-auto">
-          <a
-            class="linkbox text-white"
-            href="https://jazzyspoon.bandcamp.com/"
-            target="_blank"
-            ><img
-              src="./img/bandcamp-button-square-white-64.png"
-              alt="bandcamp"
-              height="60"
-              width="60"
-          /></a>
-          <a
-            class="linkbox text-white"
-            href="https://music.apple.com/mt/artist/jazzyspoon/386254134"
-            target="_blank"
-            ><img
-              src="./img/iTunes Logo - 88FilesCom.svg"
-              alt="Itunes"
-              height="60"
-              width="60"
-          /></a>
-          <a
-            class="linkbox text-white"
-            href="https://open.spotify.com/artist/5SUPelrFERP9jhGgvNd9e3?si=J4iOQi-1SRWwosDgKzQK7Q"
-            target="_blank"
-            ><img
-              src="./img/Spotify_logo_without_text.svg"
-              alt="spotify"
-              height="60"
-              width="60"
-          /></a>
-          <a
-            class="linkbox text-white"
-            href="https://www.youtube.com/c/jazzyspoon/videos"
-            target="_blank"
-            ><img
-              src="./img/YouTube-Play-01.svg"
-              alt="youtube"
-              height="60"
-              width="60"
-          /></a>
-          <a
-            class="linkbox text-white"
+      <h4>Follow/listen On:</h4>
+      <div class="container mx-auto">
+        <div class="row-fluid">
+          <a class="" href="https://jazzyspoon.bandcamp.com/" target="_blank"><img
+              src="./img/bandcamp-button-square-white-64.png" alt="bandcamp" height="60" width="60"
+              class="img-fluid" /></a>
+          <a class="" href="https://music.apple.com/mt/artist/jazzyspoon/386254134" target="_blank"><img
+              src="./img/iTunes Logo - 88FilesCom.svg" alt="Itunes" height="60" width="60" class="img-fluid" /></a>
+          <a class="" href="https://open.spotify.com/artist/5SUPelrFERP9jhGgvNd9e3?si=J4iOQi-1SRWwosDgKzQK7Q"
+            target="_blank"><img src="./img/Spotify_logo_without_text.svg" alt="spotify" height="60" width="60"
+              class="img-fluid" /></a>
+          <a class="" href="https://www.youtube.com/c/jazzyspoon/videos" target="_blank"><img
+              src="./img/YouTube-Play-01.svg" alt="youtube" height="60" width="60" class="img-fluid" /></a>
+          <a class=""
             href="https://music.amazon.com/artists/B003YKB6MY/jazzyspoon?marketplaceId=ATVPDKIKX0DER&musicTerritory=US"
-            target="_blank"
-            ><img
-              src="./img/Amazon_icon.svg"
-              alt="amazon"
-              height="60"
-              width="60"
-          /></a>
-          <a
-            class="linkbox text-white"
-            href="https://twitter.com/#!/Jazzyspoon"
-            target="_blank"
-            ><img
-              src="./img/twitter-logo-2429.svg"
-              alt="twitter"
-              height="60"
-              width="60"
-          /></a>
+            target="_blank"><img src="./img/Amazon_icon.svg" alt="amazon" height="60" width="60"
+              class="img-fluid" /></a>
+          <a class="" href="https://twitter.com/#!/Jazzyspoon" target="_blank"><img src="./img/twitter-logo-2429.svg"
+              alt="twitter" height="60" width="60" class="img-fluid" /></a>
 
-          <a
-            class="linkbox text-white"
-            href="https://www.facebook.com/Jazzyspoon"
-            target="_blank"
-            ><img
-              src="./img/Facebook_f_logo_(2019).svg"
-              alt="facebook"
-              height="60"
-              width="60"
-          /></a>
-          <a
-            class="linkbox text-white"
-            href="https://www.instagram.com/jazzyspoon/"
-            target="_blank"
-            ><img
-              src="./img/Instagram_logo_2016.svg"
-              alt="instagram"
-              height="60"
-              width="60"
-          /></a>
-          <a
-            class="linkbox text-white"
-            href="http://jazzyspoon.tumblr.com"
-            target="_blank"
-            ><img src="./img/Tumblr.svg" alt="tumblr" height="60" width="60"
-          /></a>
-          <a
-            class="linkbox text-white"
-            href="https://hearthis.at/jazzyspoon"
-            target="_blank"
-            ><img
-              src="./img/hearthis.at-edit.png"
-              alt="hearthis.at"
-              height="60"
-              width="60"
-          /></a>
+          <a class="" href="https://www.facebook.com/Jazzyspoon" target="_blank"><img
+              src="./img/Facebook_f_logo_(2019).svg" alt="facebook" height="60" width="60" class="img-fluid" /></a>
+          <a class="" href="https://www.instagram.com/jazzyspoon/" target="_blank"><img
+              src="./img/Instagram_logo_2016.svg" alt="instagram" height="60" width="60" class="img-fluid" /></a>
+          <a class="" href="http://jazzyspoon.tumblr.com" target="_blank"><img src="./img/Tumblr.svg" alt="tumblr"
+              height="60" width="60" /></a>
+          <a class="" href="https://hearthis.at/jazzyspoon" target="_blank"><img src="./img/hearthis.at-edit.png"
+              alt="hearthis.at" height="60" width="60" class="img-fluid" /></a>
         </div>
       </div>
     </div>
@@ -226,46 +152,22 @@
     <div class="container spotifyalbums" id="spotifyalbums">
       <h3>A Few Spotify Albums</h3>
       <div class="row-fluid">
-        <iframe
-          class="releases"
-          src="https://open.spotify.com/embed/album/2qqEnKcfOHmyh6ebFQVwyW"
-          allow="encrypted-media"
-        ></iframe>
-        <iframe
-          class="releases"
-          src="https://open.spotify.com/embed/album/5MMY5sBXWGhSDl0VkwUwq9"
-          allow="encrypted-media"
-        ></iframe>
-        <iframe
-          class="releases"
-          src="https://open.spotify.com/embed/album/2aNNFx5xQVloZo8KeC1vp9"
-          allow="encrypted-media"
-        ></iframe>
-        <iframe
-          class="releases"
-          src="https://open.spotify.com/embed/album/5tKsp72TUGrbtASP49bi5m"
-          allow="encrypted-media"
-        ></iframe>
-        <iframe
-          class="releases"
-          src="https://open.spotify.com/embed/album/20HNwHNNKknbWua6sgvm18"
-          allow="encrypted-media"
-        ></iframe>
-        <iframe
-          class="releases"
-          src="https://open.spotify.com/embed/album/3f97fmnVBlAyzqu6jeqyBl"
-          allow="encrypted-media"
-        ></iframe>
-        <iframe
-          class="releases"
-          src="https://open.spotify.com/embed/album/4X065d98Yseu3dVkOaaOwD"
-          allow="encrypted-media"
-        ></iframe>
-        <iframe
-          class="releases"
-          src="https://open.spotify.com/embed/album/7EqaKsOKOpQf79SPhUO1yN"
-          allow="encrypted-media"
-        ></iframe>
+        <iframe class="releases" src="https://open.spotify.com/embed/album/2qqEnKcfOHmyh6ebFQVwyW"
+          allow="encrypted-media"></iframe>
+        <iframe class="releases" src="https://open.spotify.com/embed/album/5MMY5sBXWGhSDl0VkwUwq9"
+          allow="encrypted-media"></iframe>
+        <iframe class="releases" src="https://open.spotify.com/embed/album/2aNNFx5xQVloZo8KeC1vp9"
+          allow="encrypted-media"></iframe>
+        <iframe class="releases" src="https://open.spotify.com/embed/album/5tKsp72TUGrbtASP49bi5m"
+          allow="encrypted-media"></iframe>
+        <iframe class="releases" src="https://open.spotify.com/embed/album/20HNwHNNKknbWua6sgvm18"
+          allow="encrypted-media"></iframe>
+        <iframe class="releases" src="https://open.spotify.com/embed/album/3f97fmnVBlAyzqu6jeqyBl"
+          allow="encrypted-media"></iframe>
+        <iframe class="releases" src="https://open.spotify.com/embed/album/4X065d98Yseu3dVkOaaOwD"
+          allow="encrypted-media"></iframe>
+        <iframe class="releases" src="https://open.spotify.com/embed/album/7EqaKsOKOpQf79SPhUO1yN"
+          allow="encrypted-media"></iframe>
       </div>
     </div>
 
@@ -274,14 +176,9 @@
     <div class="container spotifyalbums mx-auto" id="SCplaylists">
       <h3>Soundcloud Playlist</h3>
       <div class="row-fluid">
-        <iframe
-          class="soundcloud"
-          height="550"
-          allow="autoplay"
-          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1191516880&color=%23050405&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
-        ></iframe>
-        <div
-          style="
+        <iframe class="soundcloud" height="550" allow="autoplay"
+          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1191516880&color=%23050405&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+        <div style="
             font-size: 10px;
             color: #cccccc;
             line-break: anywhere;
@@ -292,23 +189,13 @@
             font-family: Interstate, Lucida Grande, Lucida Sans Unicode,
               Lucida Sans, Garuda, Verdana, Tahoma, sans-serif;
             font-weight: 100;
-          "
-        >
-          <a
-            href="https://soundcloud.com/jazzyspoon"
-            title="Jazzyspoon"
-            target="_blank"
-            style="color: #cccccc; text-decoration: none"
-          ></a
-          ><a
-            href="https://soundcloud.com/jazzyspoon/sets/jazzyspoon-latest-tracks"
-            title="Jazzyspoon Latest Tracks"
-            target="_blank"
-            style="color: #cccccc; text-decoration: none"
-          ></a>
+          ">
+          <a href="https://soundcloud.com/jazzyspoon" title="Jazzyspoon" target="_blank"
+            style="color: #cccccc; text-decoration: none"></a><a
+            href="https://soundcloud.com/jazzyspoon/sets/jazzyspoon-latest-tracks" title="Jazzyspoon Latest Tracks"
+            target="_blank" style="color: #cccccc; text-decoration: none"></a>
         </div>
-        <div
-          style="
+        <div style="
             font-size: 10px;
             color: #cccccc;
             line-break: anywhere;
@@ -319,8 +206,7 @@
             font-family: Interstate, Lucida Grande, Lucida Sans Unicode,
               Lucida Sans, Garuda, Verdana, Tahoma, sans-serif;
             font-weight: 100;
-          "
-        ></div>
+          "></div>
       </div>
     </div>
 
@@ -328,46 +214,64 @@
 
     <div class="container spotifyalbums mx-auto" id="BCplaylists">
       <h3>Exclusive Bandcamp Albums</h3>
-      <div class="grid row-fluid">
-        <iframe
-          style="border: 0; width: 500px; height: 120px"
-          src="https://bandcamp.com/EmbeddedPlayer/album=375194788/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/"
-        ></iframe>
+      
+      <div class="grid row">
 
-        <iframe
-          style="border: 0; width: 500px; height: 120px"
-          src="https://bandcamp.com/EmbeddedPlayer/album=1164562654/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/"
-        ></iframe>
-
-        <iframe
-          style="border: 0; width: 500px; height: 120px"
-          src="https://bandcamp.com/EmbeddedPlayer/album=3919451435/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/"
-        ></iframe>
-
-        <iframe
-          style="border: 0; width: 500px; height: 120px"
-          src="https://bandcamp.com/EmbeddedPlayer/album=583416785/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/"
-        ></iframe>
-
-        <iframe
-          style="border: 0; width: 500px; height: 120px"
-          src="https://bandcamp.com/EmbeddedPlayer/album=2211586993/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/"
-        ></iframe>
-
-        <iframe
-          style="border: 0; width: 500px; height: 120px"
-          src="https://bandcamp.com/EmbeddedPlayer/album=2800845654/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/"
-        ></iframe>
-
-        <iframe
-          style="border: 0; width: 500px; height: 120px"
-          src="https://bandcamp.com/EmbeddedPlayer/album=3636608481/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/"
-        ></iframe>
-
-        <iframe
-          style="border: 0; width: 500px; height: 120px"
-          src="https://bandcamp.com/EmbeddedPlayer/album=132793853/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/"
-        ></iframe>
+        <div class="card presets" style="width: 12rem;">
+          <img src="./img/JAremixes.JPG" alt="Hard Drive Recovery: The Jeff Appleton Remixes" />
+            
+              <div class="card-body">
+                <a class="card-text" href="https://jazzyspoon.bandcamp.com/album/hard-drive-recovery-the-jeff-appleton-remixes"
+                target="_blank">Hard Drive Recovery: The Jeff Appleton Remixes</a>
+              </div>
+        </div>
+        <div class="card presets" style="width: 12rem;">
+          <img src="./img/ISATREMIXES.JPG" alt="Jazzyspoon: A Mutation of my Environment" />
+            
+              <div class="card-body">
+                <a class="card-text" href="https://idmfnetlabel.bandcamp.com/album/circle-when-remixed-idmf015" target="_blank">Jazzyspoon: A Mutation of my Environment</a>
+              </div>
+        </div>
+        <div class="card presets" style="width: 12rem;">
+          <img src="./img/cwrEMIXED.JPG" alt="circle when remixed" />
+                          <div class="card-body">
+                <a class="card-text" href="https://idmfnetlabel.bandcamp.com/album/circle-when-remixed-idmf015" target="_blank">Jazzyspoon: Circle When Remixed</a>
+              </div>
+        </div>
+        <div class="card presets" style="width: 12rem;">
+          <img src="./img/MEANTIME.JPG" alt="In The Meantime" />
+                          <div class="card-body">
+                <a class="card-text" href="https://jazzyspoon.bandcamp.com/album/in-the-meantime" target="_blank">Tulver Densa: In The Meantime</a>
+              </div>
+        </div>
+        <div class="card presets" style="width: 12rem;">
+          <img src="./img/NOTHINGNEW.JPG" alt="nOTHING nEW"  />
+                          <div class="card-body">
+                <a class="card-text" href="https://jazzyspoon.bandcamp.com/album/nothing-new"
+                target="_blank">from Noise to Water: Nothing New</a>
+              </div>
+        </div>
+        <div class="card presets" style="width: 12rem;">
+          <img src="./img/LOOKING.JPG" alt="Looking Backward, Moving Forward" />
+                          <div class="card-body">
+                <a class="card-text" href="https://jazzyspoon.bandcamp.com/album/looking-backward-moving-forward"
+                target="_blank">from Noise to Water: Looking Backward, Moving Forward</a>
+              </div>
+        </div>                  
+        <div class="card presets" style="width: 12rem;">
+          <img src="./img/THROWBACK.JPG" alt="Throwback by Water Fae" />
+                          <div class="card-body">
+                <a class="card-text" href="https://jazzyspoon.bandcamp.com/album/throwback"
+                target="_blank">Water Fae: ThrowBack</a>
+              </div>
+        </div>
+        <div class="card presets" style="width: 12rem;">
+          <img src="./img/HEARONOUT.JPG" alt="Here On Out by Water Fae"/>
+                          <div class="card-body">
+                <a class="card-text" href="https://jazzyspoon.bandcamp.com/album/here-on-out" 
+                target="_blank">Water Fae: Here On Out</a>
+              </div>
+        </div>              
       </div>
     </div>
     <!-- End of Bandcamp page -->
@@ -376,10 +280,14 @@
 
     <div class="container spotifyalbums mx-auto" id="videos">
       <h3>Latest Videos</h3>
-      <div class="container">
-        <div class="row mx-auto">
+      <div class="container mx-auto">
+        <div class="row grid">
+          <div class="row">
+
+           
+          
           <!-- modal/video 1 -->
-          <!-- <div
+          <div
             class="modal fade"
             id="videoModal"
             tabindex="-1"
@@ -421,45 +329,27 @@
                 the time to listen to my noise.
               </p>
             </div>
-          </div> -->
+          </div>
 
           <!-- modal/video 2 -->
 
-          <div
-            class="modal fade"
-            id="videoModal2"
-            tabindex="-1"
-            role="dialog"
-            aria-label="myLargeModalLabel"
-          >
+          <div class="modal fade" id="videoModal2" tabindex="-1" role="dialog" aria-label="myLargeModalLabel">
             <div class="modal-dialog modal-lg" role="document">
               <div class="modal-content">
                 <div class="modal-body">
                   <div class="embed-responsive embed-responsive-16by9">
-                    <iframe
-                      class="embed-responsive-item"
-                      src="https://www.youtube.com/embed/oW1KC6TZLjs"
-                      allowfullscreen
-                    ></iframe>
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/oW1KC6TZLjs"
+                      allowfullscreen></iframe>
                   </div>
                 </div>
               </div>
             </div>
           </div>
           <div class="card videocard">
-            <img
-              class="videoimage"
-              src="./img/vidthumbs/watermark.JPG"
-              alt="Watermark"
-            />
+            <img class="videoimage" src="./img/vidthumbs/watermark.JPG" alt="Watermark" />
             <div class="card-body">
-              <a
-                class="btn btn-info btn-lg video"
-                data-video="https://www.youtube.com/embed/oW1KC6TZLjs"
-                data-toggle="modal"
-                data-target="#videoModal2"
-                >Play Video</a
-              >
+              <a class="btn btn-info btn-lg video" data-video="https://www.youtube.com/embed/oW1KC6TZLjs"
+                data-toggle="modal" data-target="#videoModal2">Play Video</a>
               <p class="card-text text-white">
                 [Ambient/IDM/Downtempo/Jazzhop] A very chillout-style opening
                 track from my 2019 release (free on bandcamp) titled
@@ -470,41 +360,23 @@
           </div>
           <!-- modal/video 3 -->
 
-          <div
-            class="modal fade"
-            id="videoModal3"
-            tabindex="-1"
-            role="dialog"
-            aria-label="myLargeModalLabel"
-          >
+          <div class="modal fade" id="videoModal3" tabindex="-1" role="dialog" aria-label="myLargeModalLabel">
             <div class="modal-dialog modal-lg" role="document">
               <div class="modal-content">
                 <div class="modal-body">
                   <div class="embed-responsive embed-responsive-16by9">
-                    <iframe
-                      class="embed-responsive-item"
-                      src="https://www.youtube.com/embed/Z5Wxyv5r4nA"
-                      allowfullscreen
-                    ></iframe>
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Z5Wxyv5r4nA"
+                      allowfullscreen></iframe>
                   </div>
                 </div>
               </div>
             </div>
           </div>
           <div class="card videocard">
-            <img
-              class="videoimage"
-              src="./img/vidthumbs/somplace.JPG"
-              alt="Out There, Someplace"
-            />
+            <img class="videoimage" src="./img/vidthumbs/somplace.JPG" alt="Out There, Someplace" />
             <div class="card-body">
-              <a
-                class="btn btn-info btn-lg video"
-                data-video="https://www.youtube.com/embed/Z5Wxyv5r4nA"
-                data-toggle="modal"
-                data-target="#videoModal3"
-                >Play Video</a
-              >
+              <a class="btn btn-info btn-lg video" data-video="https://www.youtube.com/embed/Z5Wxyv5r4nA"
+                data-toggle="modal" data-target="#videoModal3">Play Video</a>
               <p class="card-text text-white">
                 [Ambient/IDM/Experimental] A drum heavy, chillout track
                 available on my 2019 relase "Watermark. It is available as a
@@ -516,41 +388,23 @@
 
           <!-- modal/video 4 -->
 
-          <div
-            class="modal fade"
-            id="videoModal4"
-            tabindex="-1"
-            role="dialog"
-            aria-label="myLargeModalLabel"
-          >
+          <div class="modal fade" id="videoModal4" tabindex="-1" role="dialog" aria-label="myLargeModalLabel">
             <div class="modal-dialog modal-lg" role="document">
               <div class="modal-content">
                 <div class="modal-body">
                   <div class="embed-responsive embed-responsive-16by9">
-                    <iframe
-                      class="embed-responsive-item"
-                      src="https://www.youtube.com/embed/7PjrJzyKx6Q"
-                      allowfullscreen
-                    ></iframe>
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/7PjrJzyKx6Q"
+                      allowfullscreen></iframe>
                   </div>
                 </div>
               </div>
             </div>
           </div>
           <div class="card videocard">
-            <img
-              class="videoimage"
-              src="./img/vidthumbs/reddress.JPG"
-              alt="The Red Dress"
-            />
+            <img class="videoimage" src="./img/vidthumbs/reddress.JPG" alt="The Red Dress" />
             <div class="card-body">
-              <a
-                class="btn btn-info btn-lg video"
-                data-video="https://www.youtube.com/embed/7PjrJzyKx6Q"
-                data-toggle="modal"
-                data-target="#videoModal4"
-                >Play Video</a
-              >
+              <a class="btn btn-info btn-lg video" data-video="https://www.youtube.com/embed/7PjrJzyKx6Q"
+                data-toggle="modal" data-target="#videoModal4">Play Video</a>
               <p class="card-text text-white">
                 [Ambient/IDM] An ambient IDM meets chill hop track off my 2019
                 release titled "Watermark". The album is available for free on
@@ -575,196 +429,91 @@
       <div class="container">
         <div class="grid row">
           <div class="card presets" style="width: 12rem">
-            <img
-              class="card-img-top"
-              src="./img/reaktor/architextureremix.jpg"
-              alt="Card image cap"
-            />
+            <img class="card-img-top" src="./img/reaktor/architextureremix.jpg" alt="Card image cap" />
             <div class="card-body">
               <h5 class="card-title">Architexture</h5>
-              <a
-                href="/VST_PRESETS/ARCHITEXTUREMIX.rar"
-                class="btn btn-primary"
-                target="_blank"
-                >Download</a
-              >
+              <a href="https://jazzyspoon.com/VST_PRESETS/ARCHITEXTUREMIX.rar" class="btn btn-primary" target="_blank">Download</a>
             </div>
           </div>
           <div class="card presets" style="width: 12rem">
-            <img
-              class="card-img-top"
-              src="./img/reaktor/chopsokkit.jpg"
-              alt="Card image cap"
-            />
+            <img class="card-img-top" src="./img/reaktor/chopsokkit.jpg" alt="Card image cap" />
             <div class="card-body">
               <h5 class="card-title">Chopsokkit</h5>
-              <a
-                href="/VST_PRESETS/Jazzyspoon%20CHOPSOKKIT%20v2.zip"
-                class="btn btn-primary"
-                target="_blank"
-                >Download</a
-              >
+              <a href="https://jazzyspoon.com/VST_PRESETS/Jazzyspoon%20CHOPSOKKIT%20v2.zip" class="btn btn-primary"
+                target="_blank">Download</a>
             </div>
           </div>
           <div class="card presets" style="width: 12rem">
-            <img
-              class="card-img-top"
-              src="./img/reaktor/songfreezer.jpg"
-              alt="Card image cap"
-            />
+            <img class="card-img-top" src="./img/reaktor/songfreezer.jpg" alt="Card image cap" />
             <div class="card-body">
               <h5 class="card-title">Songfreezer</h5>
-              <a
-                href="/VST_PRESETS/Jazzyspoon%20SONGFREEZER.rar"
-                class="btn btn-primary"
-                target="_blank"
-                >Download</a
-              >
+              <a href="https://jazzyspoon.com/VST_PRESETS/Jazzyspoon%20SONGFREEZER.rar" class="btn btn-primary" target="_blank">Download</a>
             </div>
           </div>
           <div class="card presets" style="width: 12rem">
-            <img
-              class="card-img-top"
-              src="./img/reaktor/madness.jpg"
-              alt="Card image cap"
-            />
+            <img class="card-img-top" src="./img/reaktor/madness.jpg" alt="Card image cap" />
             <div class="card-body">
               <h5 class="card-title">Madness</h5>
-              <a
-                href="/VST_PRESETS/MADNESS.rar"
-                class="btn btn-primary"
-                target="_blank"
-                >Download</a
-              >
+              <a href="https://jazzyspoon.com/VST_PRESETS/MADNESS.rar" class="btn btn-primary" target="_blank">Download</a>
             </div>
           </div>
           <div class="card presets" style="width: 12rem">
-            <img
-              class="card-img-top"
-              src="./img/reaktor/newspoon.jpg"
-              alt="Card image cap"
-            />
+            <img class="card-img-top" src="./img/reaktor/newspoon.jpg" alt="Card image cap" />
             <div class="card-body">
               <h5 class="card-title">Newspoon</h5>
-              <a
-                href="/VST_PRESETS/NEWSPOON.rar"
-                class="btn btn-primary"
-                target="_blank"
-                >Download</a
-              >
+              <a href="https://jazzyspoon.com/VST_PRESETS/NEWSPOON.rar" class="btn btn-primary" target="_blank">Download</a>
             </div>
           </div>
           <div class="card presets" style="width: 12rem">
-            <img
-              class="card-img-top"
-              src="./img/reaktor/ghoster.jpg"
-              alt="Card image cap"
-            />
+            <img class="card-img-top" src="./img/reaktor/ghoster.jpg" alt="Card image cap" />
             <div class="card-body">
               <h5 class="card-title">Ghoster</h5>
 
-              <a
-                href="/VST_PRESETS/GHOSTER.rar"
-                class="btn btn-primary"
-                target="_blank"
-                >Download</a
-              >
+              <a href="https://jazzyspoon.com/VST_PRESETS/GHOSTER.rar" class="btn btn-primary" target="_blank">Download</a>
             </div>
           </div>
           <div class="card presets" style="width: 12rem">
-            <img
-              class="card-img-top"
-              src="./img/reaktor/graindrain.jpg"
-              alt="Card image cap"
-            />
+            <img class="card-img-top" src="./img/reaktor/graindrain.jpg" alt="Card image cap" />
             <div class="card-body">
               <h5 class="card-title">Graindrain</h5>
-              <a
-                href="/VST_PRESETS/jazzyspoon%20GRAINDRAIN.rar"
-                class="btn btn-primary"
-                target="download"
-                >Download</a
-              >
+              <a href="https://jazzyspoon.com/VST_PRESETS/jazzyspoon%20GRAINDRAIN.rar" class="btn btn-primary" target="download">Download</a>
             </div>
           </div>
           <div class="card presets" style="width: 12rem">
-            <img
-              class="card-img-top"
-              src="./img/reaktor/drumtangler.jpg"
-              alt="Card image cap"
-            />
+            <img class="card-img-top" src="./img/reaktor/drumtangler.jpg" alt="Card image cap" />
             <div class="card-body">
               <h5 class="card-title">Drumtangler</h5>
-              <a
-                href="/VST_PRESETS/Jazzyspoon%20DRUMTANGLER.rar"
-                class="btn btn-primary"
-                target="_blank"
-                >Download</a
-              >
+              <a href="https://jazzyspoon.com/VST_PRESETS/Jazzyspoon%20DRUMTANGLER.rar" class="btn btn-primary" target="_blank">Download</a>
             </div>
           </div>
           <div class="card presets" style="width: 12rem">
-            <img
-              class="card-img-top"
-              src="./img/reaktor/spirex.jpg"
-              alt="Card image cap"
-            />
+            <img class="card-img-top" src="./img/reaktor/spirex.jpg" alt="Card image cap" />
             <div class="card-body">
               <h5 class="card-title">Spirex</h5>
-              <a
-                href="/VST_PRESETS/JAZZYSPOON%20SPIREX.rar"
-                class="btn btn-primary"
-                target="_blank"
-                >Download</a
-              >
+              <a href="https://jazzyspoon.com/VST_PRESETS/JAZZYSPOON%20SPIREX.rar" class="btn btn-primary" target="_blank">Download</a>
             </div>
           </div>
           <div class="card presets" style="width: 12rem">
-            <img
-              class="card-img-top"
-              src="./img/reaktor/tapespoon.jpg"
-              alt="Card image cap"
-            />
+            <img class="card-img-top" src="./img/reaktor/tapespoon.jpg" alt="Card image cap" />
             <div class="card-body">
               <h5 class="card-title">Tapespoon</h5>
-              <a
-                href="/VST_PRESETS/TAPESPOON.rar"
-                class="btn btn-primary"
-                target="_blank"
-                >Download</a
-              >
+              <a href="https://jazzyspoon.com/VST_PRESETS/TAPESPOON.rar" class="btn btn-primary" target="_blank">Download</a>
             </div>
           </div>
           <div class="card presets" style="width: 12rem">
-            <img
-              class="card-img-top"
-              src="./img/reaktor/beatweirder.jpg"
-              alt="Card image cap"
-            />
+            <img class="card-img-top" src="./img/reaktor/beatweirder.jpg" alt="Card image cap" />
             <div class="card-body">
               <h5 class="card-title">Beatweirder</h5>
-              <a
-                href="/VST_PRESETS/BEATWEIRDER%20by%20Jazzyspoon.rar"
-                class="btn btn-primary"
-                target="_blank"
-                >Download</a
-              >
+              <a href="https://jazzyspoon.com/VST_PRESETS/BEATWEIRDER%20by%20Jazzyspoon.rar" class="btn btn-primary"
+                target="_blank">Download</a>
             </div>
           </div>
           <div class="card presets" style="width: 12rem">
-            <img
-              class="card-img-top"
-              src="./img/reaktor/userlib.jpg"
-              alt="Card image cap"
-            />
+            <img class="card-img-top" src="./img/reaktor/userlib.jpg" alt="Card image cap" />
             <div class="card-body">
               <h5 class="card-title">User Library</h5>
-              <a
-                href="https://www.native-instruments.com/en/reaktor-community/reaktor-user-library/all/all/all/all/jason%20pottorff/latest/1/3/?q=jason%20pottorff&t=userlib"
-                class="btn btn-primary"
-                target="_blank"
-                >Go There</a
-              >
+              <a href="https://www.native-instruments.com/en/reaktor-community/reaktor-user-library/all/all/all/all/jason%20pottorff/latest/1/3/?q=jason%20pottorff&t=userlib"
+                class="btn btn-primary" target="_blank">Go There</a>
             </div>
           </div>
         </div>
@@ -778,122 +527,65 @@
       <div class="container">
         <div class="grid row">
           <div class="card presets" style="width: 12rem">
-            <img
-              class="card-img-top"
-              src="./img/battery.jpg"
-              alt="Card image cap"
-            />
+            <img class="card-img-top" src="./img/battery.jpg" alt="Card image cap" />
             <div class="card-body">
               <h5 class="card-title">DEADON KIT</h5>
-              <a
-                href="/VST_PRESETS/JAZZYSPOON%20DEADON%20KIT.rar"
-                class="btn btn-primary"
-                target="_blank"
-                >Download</a
-              >
+              <a href="https://jazzyspoon.com/VST_PRESETS/JAZZYSPOON%20DEADON%20KIT.rar" class="btn btn-primary" target="_blank">Download</a>
             </div>
           </div>
 
           <div class="card presets" style="width: 12rem">
-            <img
-              class="card-img-top"
-              src="./img/battery.jpg"
-              alt="Card image cap"
-            />
+            <img class="card-img-top" src="./img/battery.jpg" alt="Card image cap" />
             <div class="card-body">
               <h5 class="card-title">PRESSURE KIT</h5>
 
-              <a
-                href="/VST_PRESETS/JAZZYSPOON%20PRESSURE%20KIT.rar"
-                class="btn btn-primary"
-                target="_blank"
-                >Download</a
-              >
+              <a href="https://jazzyspoon.com/VST_PRESETS/JAZZYSPOON%20PRESSURE%20KIT.rar" class="btn btn-primary"
+                target="_blank">Download</a>
             </div>
           </div>
 
           <div class="card presets" style="width: 12rem">
-            <img
-              class="card-img-top"
-              src="./img/battery.jpg"
-              alt="Card image cap"
-            />
+            <img class="card-img-top" src="./img/battery.jpg" alt="Card image cap" />
             <div class="card-body">
               <h5 class="card-title">3AMBIENT KIT</h5>
 
-              <a
-                href="/VST_PRESETS/JAZZYSPOON%203AMBIENT%20KIT.rar"
-                class="btn btn-primary"
-                target="_blank"
-                >Download</a
-              >
+              <a href="https://jazzyspoon.com/VST_PRESETS/JAZZYSPOON%203AMBIENT%20KIT.rar" class="btn btn-primary"
+                target="_blank">Download</a>
             </div>
           </div>
 
           <div class="card presets" style="width: 12rem">
-            <img
-              class="card-img-top"
-              src="./img/battery.jpg"
-              alt="Card image cap"
-            />
+            <img class="card-img-top" src="./img/battery.jpg" alt="Card image cap" />
             <div class="card-body">
               <h5 class="card-title">BITLESSER KIT</h5>
-              <a
-                href="/VST_PRESETS/JAZZYSPOONS%20BITLESSER%20KIT.rar"
-                class="btn btn-primary"
-                target="_blank"
-                >Download</a
-              >
+              <a href="https://jazzyspoon.com/VST_PRESETS/JAZZYSPOONS%20BITLESSER%20KIT.rar" class="btn btn-primary"
+                target="_blank">Download</a>
             </div>
           </div>
 
           <div class="card presets" style="width: 12rem">
-            <img
-              class="card-img-top"
-              src="./img/battery.jpg"
-              alt="Card image cap"
-            />
+            <img class="card-img-top" src="./img/battery.jpg" alt="Card image cap" />
             <div class="card-body">
               <h5 class="card-title">GUITARISH KIT</h5>
-              <a
-                href="/VST_PRESETS/JAZZYSPOON%20GUITARISH%20KIT.rar"
-                class="btn btn-primary"
-                target="_blank"
-                >Download</a
-              >
+              <a href="https://jazzyspoon.com/VST_PRESETS/JAZZYSPOON%20GUITARISH%20KIT.rar" class="btn btn-primary"
+                target="_blank">Download</a>
             </div>
           </div>
 
           <div class="card presets" style="width: 12rem">
-            <img
-              class="card-img-top"
-              src="./img/battery.jpg"
-              alt="Card image cap"
-            />
+            <img class="card-img-top" src="./img/battery.jpg" alt="Card image cap" />
             <div class="card-body">
               <h5 class="card-title">IG88 GRAN KIT</h5>
-              <a
-                href="/VST_PRESETS/IG88%20GRANULAR%20TWISTINGS%20KIT.rar"
-                class="btn btn-primary"
-                target="_blank"
-                >Download</a
-              >
+              <a href="https://jazzyspoon.com/VST_PRESETS/IG88%20GRANULAR%20TWISTINGS%20KIT.rar" class="btn btn-primary"
+                target="_blank">Download</a>
             </div>
           </div>
           <div class="card presets" style="width: 12rem">
-            <img
-              class="card-img-top"
-              src="./img/battery.jpg"
-              alt="Card image cap"
-            />
+            <img class="card-img-top" src="./img/battery.jpg" alt="Card image cap" />
             <div class="card-body">
               <h5 class="card-title">ANGRY IDMF KIT</h5>
-              <a
-                href="/VST_PRESETS/JAZZYSPOON%20ANGRY%20IDMF%20SAMPLES.rar"
-                class="btn btn-primary"
-                target="_blank"
-                >Download</a
-              >
+              <a href="https://jazzyspoon.com/VST_PRESETS/JAZZYSPOON%20ANGRY%20IDMF%20SAMPLES.rar" class="btn btn-primary"
+                target="_blank">Download</a>
             </div>
           </div>
         </div>
@@ -907,59 +599,35 @@
       <div class="container">
         <div class="grid row">
           <div class="card presets" style="width: 14rem">
-            <img
-              class="card-img-top"
-              src="./img/absynth.jpg"
-              alt="Card image cap"
-            />
+            <img class="card-img-top" src="./img/absynth.jpg" alt="Card image cap" />
             <div class="card-body">
               <h5 class="card-title">
                 Jazzyspoon Absynth Bank(created in Absynth v4.2)
               </h5>
-              <a
-                href="/VST_PRESETS/JAZZYSPOON%20ABSYNTH%204%20BANK%201.rar"
-                class="btn btn-primary"
-                target="_blank"
-                >Download</a
-              >
+              <a href="https://jazzyspoon.com/VST_PRESETS/JAZZYSPOON%20ABSYNTH%204%20BANK%201.rar" class="btn btn-primary"
+                target="_blank">Download</a>
             </div>
           </div>
 
           <div class="card presets" style="width: 14rem">
-            <img
-              class="card-img-top"
-              src="./img/massive.jpg"
-              alt="Card image cap"
-            />
+            <img class="card-img-top" src="./img/massive.jpg" alt="Card image cap" />
             <div class="card-body">
               <h5 class="card-title">
                 Jazzyspoon Massive Bank(created in Massive v4.2)
               </h5>
-              <a
-                href="/VST_PRESETS/Jazzyspoon%20Massive%20presets%201.rar"
-                class="btn btn-primary"
-                target="_blank"
-                >Download</a
-              >
+              <a href="https://jazzyspoon.com/VST_PRESETS/Jazzyspoon%20Massive%20presets%201.rar" class="btn btn-primary"
+                target="_blank">Download</a>
             </div>
           </div>
 
           <div class="card presets" style="width: 14rem">
-            <img
-              class="card-img-top"
-              src="./img/guitarrig.jpg"
-              alt="Card image cap"
-            />
+            <img class="card-img-top" src="./img/guitarrig.jpg" alt="Card image cap" />
             <div class="card-body">
               <h5 class="card-title">
                 Jazzyspoon G-Rig Kit (created in Guitar Rig v4.1)
               </h5>
-              <a
-                href="/VST_PRESETS/jazzyspoon%20guitar%20rig%20bank.zip"
-                class="btn btn-primary"
-                target="_blank"
-                >Download</a
-              >
+              <a href="https://jazzyspoon.com/VST_PRESETS/jazzyspoon%20guitar%20rig%20bank.zip" class="btn btn-primary"
+                target="_blank">Download</a>
             </div>
           </div>
         </div>
@@ -983,9 +651,7 @@
         <!-- Your Chat Plugin code -->
 
         <h3 style="text-align: center">
-          <span style="font-weight: normal"
-            ><span style="font-size: large">Hello Friends!</span></span
-          >
+          <span style="font-weight: normal"><span style="font-size: large">Hello Friends!</span></span>
         </h3>
         <p style="text-align: center"><br /></p>
         <h5>
@@ -1014,29 +680,22 @@
         <div style="text-align: center"><br /></div>
         <div style="text-align: center">
           <h5>
-            I will keep posting more important tracks, videos, and information
+            "I will keep posting more important tracks, videos, and information
             on my Website for all of you. Please give your support and love on
-            social media.
+            social media." - Jazzyspoon
           </h5>
         </div>
         <div style="text-align: center"></div>
-        <h5>
-          Thanks For Visiting and feel free to email me <a href=""></a>here:
-        </h5>
-        <a href="#" id="mailbutton" target="_blank" class="btn btn-dark"
-          >Email Jazzyspoon</a
-        >
+        
+        
       </div>
       <div>
+        <br><br>
         <h6>
           This site was created by Jazzyspoon aka Jason Pottorff. Learn more
           about Jason as a web Developer here:
-          <a
-            style="text-align: center"
-            href="https://jazzyspoon.github.io/portfolio-website/index.html"
-            target="_blank"
-            >Jason Pottorff Wev Dev Portfolio</a
-          >
+          <a style="text-align: center" href="https://jasonpottorffportfolio.com/"
+            target="_blank">Jason Pottorff Wev Dev Portfolio</a>
         </h6>
       </div>
     </div>
@@ -1049,19 +708,10 @@
         <div class="row">
           <!-- site 1 -->
           <div class="card presets" style="width: 14rem">
-            <img
-              class="card-img-top"
-              src="./img/idmf.JPG"
-              alt="Card image cap"
-            />
+            <img class="card-img-top" src="./img/idmf.JPG" alt="Card image cap" />
             <div class="card-body">
               <h5 class="card-title">IDM FORUMS</h5>
-              <a
-                href="http://idmforums.com/"
-                target="_blank"
-                class="btn btn-primary"
-                >visit</a
-              >
+              <a href="http://idmforums.com/" target="_blank" class="btn btn-primary">visit</a>
               <p>
                 A great place for edgier IDM and intelligent electronic music.
                 Jazzyspoon is both an artist of the IDMf netlabel and regular
@@ -1072,19 +722,10 @@
 
           <!-- site 2 -->
           <div class="card presets" style="width: 14rem">
-            <img
-              class="card-img-top"
-              src="./img/idmguru.JPG"
-              alt="Card image cap"
-            />
+            <img class="card-img-top" src="./img/idmguru.JPG" alt="Card image cap" />
             <div class="card-body">
               <h5 class="card-title">THE IDM PRODUCTION BUREAU (IDM GURU)</h5>
-              <a
-                href="https://www.idm.guru/"
-                target="_blank"
-                class="btn btn-primary"
-                >visit</a
-              >
+              <a href="https://www.idm.guru/" target="_blank" class="btn btn-primary">visit</a>
               <p>
                 A new spot for artists of intelligent electronic music. Please
                 come by for a visit.
@@ -1094,19 +735,10 @@
 
           <!-- site 3 -->
           <div class="card presets" style="width: 14rem">
-            <img
-              class="card-img-top"
-              src="./img/kvr.JPG"
-              alt="Card image cap"
-            />
+            <img class="card-img-top" src="./img/kvr.JPG" alt="Card image cap" />
             <div class="card-body">
               <h5 class="card-title">KVR Forums</h5>
-              <a
-                href="https://www.kvraudio.com/forum/"
-                target="_blank"
-                class="btn btn-primary"
-                >visit</a
-              >
+              <a href="https://www.kvraudio.com/forum/" target="_blank" class="btn btn-primary">visit</a>
               <p>
                 A home to many musicians worldwide that share ideas, creations,
                 music, recording techniques, and music software.
@@ -1116,25 +748,19 @@
         </div>
       </div>
     </div>
+  </div>
+  <!-- <script src="./js/jquery.thumbs.js"></script> -->
+<!-- MDB -->
+<script type="text/javascript" src="js/mdb.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+    integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"
+    integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/"
+    crossorigin="anonymous"></script>
+  <script src="./js/promise-polyfill.js"></script>
+  <script src="./js/fetch.polyfill.js"></script>
+  <script src="./js/scripts.js"></script>
+</body>
 
-    <!-- <script src="./js/jquery.thumbs.js"></script> -->
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    ></script>
-    <script src="./js/promise-polyfill.js"></script>
-    <script src="./js/fetch.polyfill.js"></script>
-    <script src="./js/scripts.js"></script>
-  </body>
 </html>
