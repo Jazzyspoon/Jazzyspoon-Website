@@ -94,3 +94,7 @@ $(document).ready(function () {
 $(".navbar-nav>li").on("click", function () {
   $(".navbar-collapse").collapse("hide");
 });
+
+$(".img-fluid").addClass("wow fadeIn z-depth-1-half");
+
+new WOW().init();
