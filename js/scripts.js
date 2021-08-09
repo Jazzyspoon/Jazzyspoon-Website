@@ -106,3 +106,10 @@ $(".navbar-nav>li").on("click", function () {
 // $(".img-fluid").addClass("wow fadeIn z-depth-1-half");
 
 // new WOW().init();
+
+var tooltipTriggerList = [].slice.call(
+  document.querySelectorAll('[data-bs-toggle="tooltip"]')
+);
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+  return new bootstrap.Tooltip(tooltipTriggerEl);
+});
