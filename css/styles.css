@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 2 version
+*/
+
 body {
   background-color: #000;
   font-size: 16px;
@@ -93,7 +100,6 @@ h3 {
 
 .releases {
   height: 190px;
-
   margin: 20px;
 }
 
@@ -187,6 +193,8 @@ h1 {
 }
 
 .soundcloud {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
   scroll-behavior: auto;
