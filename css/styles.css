@@ -27,7 +27,24 @@ body {
 }
 
 .jazzyspoonlogo {
-  padding-top: 20px;
+  padding-top: 24px;
+}
+
+@keyframes spinning {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.spin {
+  animation-name: spinning;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  /* linear | ease | ease-in | ease-out | ease-in-out */
+  animation-timing-function: ease-in-out;
+  border-radius: 50%;
 }
 
 .player {
@@ -101,6 +118,7 @@ h3 {
 .releases {
   height: 190px;
   margin: 20px;
+  border-radius: 15px;
 }
 
 .card-img {
@@ -198,6 +216,7 @@ h1 {
   display: flex;
   width: 100%;
   scroll-behavior: auto;
+  border-radius: 10px;
 }
 
 .presets {
