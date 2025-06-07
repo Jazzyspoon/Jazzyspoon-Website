@@ -279,7 +279,14 @@ h1 {
 }
 
 @media screen and (max-width: 760px) {
-  * {
+  /* Replace the universal selector with more specific selectors */
+  .card-text, .card-title, p {
     text-align: center !important;
+  }
+  
+  /* Add responsive sizing for cards */
+  .card.presets {
+    width: 100% !important;
+    margin: 1rem auto;
   }
 }
