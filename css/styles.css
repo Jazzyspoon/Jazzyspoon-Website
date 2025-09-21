@@ -5,32 +5,209 @@
 * Browsers: last 2 version
 */
 
+/* Reset margins and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
 body {
-  background-color: #000;
-  font-size: 16px;
-  font-family: Verdana, Arial, Helvetica, SunSans-Regular, Sans-Serif;
-  text-align: center;
-}
-.grid {
-  justify-content: center;
-}
-.nav-item {
-  margin-left: 25px;
+    background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
+    min-height: 100vh;
+    font-size: 16px;
+    font-family: 'Roboto', Verdana, Arial, Helvetica, SunSans-Regular, Sans-Serif;
+    text-align: center;
 }
 
-/* Modify the background color */
-.navbar-custom {
-  background-color: rgb(0, 0, 0);
-}
-
+/* Remove container bottom margin that's causing issues */
 .container {
-  margin-bottom: 200px;
+    margin-bottom: 0;
+    padding: 0 15px;
 }
+
+/* Ensure navbar spans full width */
+.navbar-custom {
+    background: linear-gradient(90deg, rgba(0,0,0,0.95) 0%, rgba(20,20,20,0.95) 100%);
+    backdrop-filter: blur(10px);
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 .navbar-toggler {
   background-color: rgb(0, 0, 0);
   color: white;
 }
+/* CSS Variables for consistent theming */
+:root {
+    --accent-blue: #2098D1;
+    --accent-purple: #6f42c1;
+    --text-muted: #adb5bd;
+}
 
+/* Enhanced body with gradient background */
+body {
+    background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
+    min-height: 100vh;
+    font-size: 16px;
+    font-family: 'Roboto', Verdana, Arial, Helvetica, SunSans-Regular, Sans-Serif;
+    text-align: center;
+}
+
+/* Improved typography hierarchy */
+h1, h2, h3 {
+    font-family: 'Roboto', Verdana, sans-serif;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+h1 {
+    font-size: 3rem;
+    text-transform: capitalize;
+    text-align: right;
+    color: #fff;
+}
+
+h2 { font-size: 2.5rem; }
+
+h3 {
+    font-size: 2rem;
+    color: #ffffff;
+    text-align: center;
+}
+
+/* Enhanced navbar with backdrop blur */
+.navbar-custom {
+    background: linear-gradient(90deg, rgba(0,0,0,0.95) 0%, rgba(20,20,20,0.95) 100%);
+    backdrop-filter: blur(10px);
+}
+
+/* Section spacing utilities */
+.section-spacing {
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+}
+
+.spotifyalbums {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    text-align: center;
+}
+
+/* Hero section enhancement */
+.hero-section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.jazzyspoonlogo {
+    margin-bottom: 3rem;
+    padding-top: 24px;
+}
+
+.spin {
+    animation-name: spinning;
+    animation-duration: 2.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    border-radius: 50%;
+    filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.3));
+}
+
+/* Social icons enhancement */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 2rem 0;
+    flex-wrap: wrap;
+}
+
+.social-icons img {
+    border-radius: 50%;
+    padding: 0.5rem;
+    background: rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.social-icons img:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.1);
+}
+
+/* Modern card design */
+.card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    background: rgba(255, 255, 255, 0.95);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 2rem;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* Enhanced button styling */
+.btn {
+    border-radius: 25px;
+    padding: 0.75rem 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.btn-primary {
+    background: linear-gradient(45deg, var(--accent-blue), var(--accent-purple));
+    border: none;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: 10px;
+    font-size: 14px;
+}
+
+/* Section dividers */
+.section-divider {
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #333, transparent);
+    margin: 4rem 0;
+}
+
+/* Improved releases styling */
+.releases {
+    height: 190px;
+    margin: 20px;
+    border-radius: 15px;
+    border: 2px solid azure;
+    transition: transform 0.3s ease;
+}
+
+.releases:hover {
+    transform: scale(1.02);
+}
 .jazzyspoonlogo {
   padding-top: 24px;
 }
@@ -283,10 +460,105 @@ h1 {
   .card-text, .card-title, p {
     text-align: center !important;
   }
-  
+
   /* Add responsive sizing for cards */
   .card.presets {
     width: 100% !important;
     margin: 1rem auto;
   }
+}
+
+/* Enhanced responsive design */
+@media screen and (max-width: 768px) {
+    .hero-section {
+        min-height: 80vh;
+        padding: 2rem 0;
+    }
+
+    h1 { font-size: 2rem; }
+    h2 { font-size: 1.8rem; }
+    h3 { font-size: 1.5rem; }
+
+    .social-icons {
+        gap: 0.5rem;
+    }
+
+    .social-icons img {
+        height: 50px;
+        width: 50px;
+    }
+
+    .card.presets {
+        width: 100% !important;
+        margin: 1rem auto;
+    }
+
+    .releases {
+        height: 150px;
+        margin: 10px;
+    }
+
+    .section-spacing {
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+    }
+
+    .spotifyalbums {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .btn {
+        padding: 0.5rem 1.5rem;
+        font-size: 0.9rem;
+    }
+
+    .card-body {
+        padding: 1rem;
+    }
+
+    .social-icons img {
+        height: 45px;
+        width: 45px;
+    }
+}
+
+/* Add loading states */
+.loading {
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+/* Improve focus states for accessibility */
+.btn:focus,
+.card:focus,
+a:focus {
+    outline: 2px solid var(--accent-blue);
+    outline-offset: 2px;
+}
+
+/* Add subtle animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card {
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+.card:nth-child(even) {
+    animation-delay: 0.1s;
+}
+
+.card:nth-child(odd) {
+    animation-delay: 0.2s;
 }
